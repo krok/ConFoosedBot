@@ -30,6 +30,11 @@ public class HelpDialog : IDialog<object>
     public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
     {
         var message = await argument;
+        if (message.Text == "help")
+        {
+            await context.PostAsync($"Help is on the way");
+            context.Wait(MessageReceivedAsync);
+        }
         if (message.Text == "reset")
         {
             PromptDialog.Confirm(
