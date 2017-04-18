@@ -32,7 +32,7 @@ public class HelpDialog : IDialog<object>
         var message = await argument;
         if (message.Text == "help")
         {
-            await context.PostAsync($"Help is on the way");
+            await context.PostAsync("Help is on the way");
             context.Wait(MessageReceivedAsync);
         }
         if (message.Text == "reset")
