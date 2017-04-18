@@ -35,7 +35,6 @@ public class HelpDialog : IDialog<object>
         {
             case "help":
                 await context.PostAsync("Help is on the way");
-                context.Wait(MessageReceivedAsync);
             case "reset":
                 PromptDialog.Confirm(
                     context,
