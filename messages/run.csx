@@ -34,7 +34,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
             switch (activity.GetActivityType())
             {
                 case ActivityTypes.Message:
-                    await Conversation.SendAsync(activity, () => new EchoDialog());
+                    await Conversation.SendAsync(activity, () => new HelpDialog());
                     break;
                 case ActivityTypes.ConversationUpdate:
                 case ActivityTypes.ContactRelationUpdate:
