@@ -29,7 +29,38 @@ public class HelpDialog : IDialog<object>
 
     public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
     {
-        await context.PostAsync("Help is on the way");
+        var message = await argument;
+
+        switch (message.Tex)
+        {
+            case "help":
+                await context.PostAsync("Help is on the way");
+            case "reset":
+                PromptDialog.Confirm(
+                    context,
+                    AfterResetAsync,
+                    "Are you sure you want to reset the count?",
+                    "Didn't get that!",
+                    promptStyle: PromptStyle.Auto);
+            default:
+                await context.PostAsync($"{this.count++}: You said {message.Text}");
+                context.Wait(MessageReceivedAsync);
+
+        }
+    }
+
+    public async Task AfterResetAsync(IDialogContext context, IAwaitable<bool> argument)
+    {
+        var confirm = await argument;
+        if (confirm)
+        {
+            this.count = 1;
+            await context.PostAsync("Reset count.");
+        }
+        else
+        {
+            await context.PostAsync("Did not reset count.");
+        }
         context.Wait(MessageReceivedAsync);
     }
 }
