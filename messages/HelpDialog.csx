@@ -45,7 +45,6 @@ public class HelpDialog : IDialog<object>
             default:
                 await context.PostAsync($"{this.count++}: You said {message.Text}");
                 context.Wait(MessageReceivedAsync);
-
         }
     }
 
