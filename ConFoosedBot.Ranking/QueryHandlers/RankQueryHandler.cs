@@ -16,7 +16,7 @@ namespace ConFoosedBot.Ranking.QueryHandlers
 
         public async Task StartAsync(IDialogContext context)
         {
-            var ranking = LadderRanking.GetPlayersByRanking(MatchRegistry.Matches);
+            var ranking = LadderRanking.GetPlayersByRanking(MatchRegistry.GetMatches(context.Activity.ChannelId));
             await context.PostAsync("The current ranking is: " + string.Join(", ", ranking.Select(p => p.Id)));
         }
     }

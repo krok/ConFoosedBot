@@ -16,7 +16,7 @@ namespace ConFoosedBot.Ranking.QueryHandlers
 
         public async Task StartAsync(IDialogContext context)
         {
-            var mathces = MatchRegistry.Matches;
+            var mathces = MatchRegistry.GetMatches(context.Activity.ChannelId);
             await context.PostAsync("Number of matches played: " + mathces.Count());
         }
     }

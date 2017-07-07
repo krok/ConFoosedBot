@@ -12,7 +12,6 @@ namespace ConFoosedBot.Ranking.Dialogs
     {
         public async Task StartAsync(IDialogContext context)
         {
-            await context.PostAsync("RootDialog.StartAsync");
             context.Wait(MessageReceivedAsync);
         }
 

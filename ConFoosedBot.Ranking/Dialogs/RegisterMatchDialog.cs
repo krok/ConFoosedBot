@@ -28,7 +28,7 @@ namespace ConFoosedBot.Ranking.Dialogs
 
             if (MatchParser.TryParse(message.Text, out Match match))
             {
-                MatchRegistry.Add(match);
+                MatchRegistry.Add(context.Activity.ChannelId,match);
                 await context.PostAsync($"Match registered: {match}");
                 context.Done($"Match registered: {match}");
             }

@@ -17,7 +17,7 @@ namespace ConFoosedBot.Ranking.CommandHandlers
         public static async Task HandleAsync(Activity activity)
         {
             MatchParser.TryParse(activity.Text, out Match match);
-            MatchRegistry.Add(match);
+            MatchRegistry.Add(activity.ChannelId, match);
             var reply = activity.CreateReply("The match was registered");
             var connector = new ConnectorClient(new Uri(activity.ServiceUrl));
             await connector.Conversations.ReplyToActivityAsync(reply);

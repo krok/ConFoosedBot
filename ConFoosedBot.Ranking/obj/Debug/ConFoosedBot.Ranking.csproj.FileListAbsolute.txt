@@ -41,3 +41,5 @@ C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\obj\Debug\Bot Ap
 C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\obj\Debug\Bot Application.pdb
 C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Confoosed.MatchLogic.dll
 C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Confoosed.MatchLogic.pdb
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\nl\Microsoft.Bot.Builder.resources.dll

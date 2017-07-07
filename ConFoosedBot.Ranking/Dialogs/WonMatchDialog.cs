@@ -29,7 +29,7 @@ namespace ConFoosedBot.Ranking.Dialogs
             if (PlayerParser.TryParse(message.Text, out Player looser))
             {
                 var match = new Match(new Player($"@{context.Activity.From.Name}"), looser);
-                MatchRegistry.Add(match);
+                MatchRegistry.Add(context.Activity.ChannelId, match);
                 await context.PostAsync($"Match registered: {match}");
                 context.Done($"Match registered: {match}");
             }
