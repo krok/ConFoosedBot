@@ -8,7 +8,7 @@ namespace Confoosed.MatchLogic
 {
     public static class LadderRanking
     {
-        public static IOrderedEnumerable<Player> GetPlayersByRanking(IEnumerable<FoosMatch> matches)
+        public static IOrderedEnumerable<Player> GetPlayersByRanking(IEnumerable<Match> matches)
         {
             var list = matches.GetGroupsBySize().ToList();
             if (list.Any(g => g.Players.Any(p => !p.Ranking.HasValue)))
@@ -39,7 +39,7 @@ namespace Confoosed.MatchLogic
             return lowestRanking > 0 ? lowestRanking.Value + 1 : count + 1;
         }
 
-        private static void UpdateRanking(Group group, Func<int> nextRank, FoosMatch match)
+        private static void UpdateRanking(Group group, Func<int> nextRank, Match match)
         {
             var winner = match.Winner;
             var looser = match.Looser;

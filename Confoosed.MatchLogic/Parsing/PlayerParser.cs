@@ -7,6 +7,17 @@ namespace Confoosed.MatchLogic.Parsing
     {
         private static readonly Regex PlayerRegex = new Regex("(@[a-zA-Z]+)", RegexOptions.Compiled);
 
+        public static bool TryParse(string message, out Player player)
+        {
+            player = null;
+
+            var matchCollection = PlayerRegex.Matches(message);
+            if (matchCollection.Count != 1)
+                return false;
+            player = new Player(matchCollection[0].Value);
+            return true;
+        }
+
         public static bool TryParse(string message, out Player player1, out Player player2)
         {
             player1 = null;

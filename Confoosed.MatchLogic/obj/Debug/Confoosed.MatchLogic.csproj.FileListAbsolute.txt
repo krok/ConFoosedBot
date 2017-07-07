@@ -1,0 +1,5 @@
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\Confoosed.MatchLogic\bin\Debug\Confoosed.MatchLogic.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\Confoosed.MatchLogic\bin\Debug\Confoosed.MatchLogic.pdb
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\Confoosed.MatchLogic\obj\Debug\Confoosed.MatchLogic.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\Confoosed.MatchLogic\obj\Debug\Confoosed.MatchLogic.pdb
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\Confoosed.MatchLogic\obj\Debug\Confoosed.MatchLogic.csprojResolveAssemblyReference.cache

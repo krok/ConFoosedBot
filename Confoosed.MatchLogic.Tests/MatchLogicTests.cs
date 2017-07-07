@@ -19,10 +19,10 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player3),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player3, player2),
+                    new Match(player1, player2),
+                    new Match(player1, player3),
+                    new Match(player1, player2),
+                    new Match(player3, player2),
                 };
 
             var actual = matches.GetPlayers().ToArray();
@@ -50,14 +50,14 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player3),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player3, player2),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player6),
-                    new FoosMatch(player6, player7),
-                    new FoosMatch(player8, player9),
+                    new Match(player1, player2),
+                    new Match(player1, player3),
+                    new Match(player1, player2),
+                    new Match(player3, player2),
+                    new Match(player4, player5),
+                    new Match(player5, player6),
+                    new Match(player6, player7),
+                    new Match(player8, player9),
                 };
 
             Assert.AreEqual(3, matches.GetGroups().Count());
@@ -81,14 +81,14 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player3),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player3, player2),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player6),
-                    new FoosMatch(player6, player7),
-                    new FoosMatch(player8, player9),
+                    new Match(player1, player2),
+                    new Match(player1, player3),
+                    new Match(player1, player2),
+                    new Match(player3, player2),
+                    new Match(player4, player5),
+                    new Match(player5, player6),
+                    new Match(player6, player7),
+                    new Match(player8, player9),
                 };
 
             var actual = matches.GetGroups().GetGroupsBySize();
@@ -112,10 +112,10 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player3),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player3, player2),
+                    new Match(player1, player2),
+                    new Match(player1, player3),
+                    new Match(player1, player2),
+                    new Match(player3, player2),
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -132,9 +132,9 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player1),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player2, player1),
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -150,10 +150,10 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player1),
-                    new FoosMatch(player2, player1),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player2, player1),
+                    new Match(player2, player1),
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -169,11 +169,11 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player1),
-                    new FoosMatch(player2, player1),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player2, player1),
+                    new Match(player2, player1),
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -189,12 +189,12 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player1),
-                    new FoosMatch(player2, player1),
-                    new FoosMatch(player2, player1),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player2, player1),
+                    new Match(player2, player1),
+                    new Match(player2, player1),
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -219,14 +219,14 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player3),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player3, player2),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player6),
-                    new FoosMatch(player6, player7),
-                    new FoosMatch(player8, player9),
+                    new Match(player1, player2),
+                    new Match(player1, player3),
+                    new Match(player1, player2),
+                    new Match(player3, player2),
+                    new Match(player4, player5),
+                    new Match(player5, player6),
+                    new Match(player6, player7),
+                    new Match(player8, player9),
                 };
 
 
@@ -253,12 +253,12 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player6),
-                    new FoosMatch(player6, player7),
-                    new FoosMatch(player8, player9, null, null, DateTime.Now.AddDays(1)),
+                    new Match(player1, player2),
+                    new Match(player1, player2),
+                    new Match(player4, player5),
+                    new Match(player5, player6),
+                    new Match(player6, player7),
+                    new Match(player8, player9, null, null, DateTime.Now.AddDays(1)),
                 };
 
 
@@ -279,15 +279,15 @@ namespace Confoosed.MatchLogic.Tests
             for (var i = 0; i < 30; i++)
                 players.Add(new Player(i.ToString()));
 
-            var matches = new List<FoosMatch>();
+            var matches = new List<Match>();
 
             for (var i = 0; i < 28; i++)
-                matches.Add(new FoosMatch(players[i], players[i + 1]));
-            matches.Add(new FoosMatch(players[0], players[29]));
+                matches.Add(new Match(players[i], players[i + 1]));
+            matches.Add(new Match(players[0], players[29]));
 
             var random = new Random();
             for (var i = 0; i < 2000; i++)
-                matches.Add(new FoosMatch(players[random.Next(0, 15)], players[new Random().Next(16, 29)]));
+                matches.Add(new Match(players[random.Next(0, 15)], players[new Random().Next(16, 29)]));
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
             Assert.AreEqual(30, actual.Count);
@@ -306,11 +306,11 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player3),
-                    new FoosMatch(player3, player4),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player1) //This match has no effect
+                    new Match(player1, player2),
+                    new Match(player2, player3),
+                    new Match(player3, player4),
+                    new Match(player4, player5),
+                    new Match(player5, player1) //This match has no effect
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -332,12 +332,12 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player3),
-                    new FoosMatch(player3, player4),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player1), //This match has no effect
-                    new FoosMatch(player3, player1)
+                    new Match(player1, player2),
+                    new Match(player2, player3),
+                    new Match(player3, player4),
+                    new Match(player4, player5),
+                    new Match(player5, player1), //This match has no effect
+                    new Match(player3, player1)
                 };
 
             var actual = LadderRanking.GetPlayersByRanking(matches).Select(p => p.Id).ToList();
@@ -363,14 +363,14 @@ namespace Confoosed.MatchLogic.Tests
             var matches =
                 new[]
                 {
-                    new FoosMatch(player1, player2),
-                    new FoosMatch(player2, player3),
-                    new FoosMatch(player4, player5),
-                    new FoosMatch(player5, player6),
-                    new FoosMatch(player6, player7),
-                    new FoosMatch(player8, player9),
-                    new FoosMatch(player4, player2),
-                    new FoosMatch(player8, player6),
+                    new Match(player1, player2),
+                    new Match(player2, player3),
+                    new Match(player4, player5),
+                    new Match(player5, player6),
+                    new Match(player6, player7),
+                    new Match(player8, player9),
+                    new Match(player4, player2),
+                    new Match(player8, player6),
                 };
 
 

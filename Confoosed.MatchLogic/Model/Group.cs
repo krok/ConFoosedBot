@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Confoosed.MatchLogic.Model
 {
+    [Serializable]
     public class Group
     {
         private static int _idCounter = 1;
@@ -21,7 +23,7 @@ namespace Confoosed.MatchLogic.Model
 
         public IList<Player> Players { get; }
 
-        public IEnumerable<FoosMatch> GetMatches()
+        public IEnumerable<Match> GetMatches()
         {
             return Players.SelectMany(p => p.GetMatches());
         }

@@ -1,0 +1,43 @@
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Bot Application.dll.config
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Bot Application.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Bot Application.pdb
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Autofac.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Chronic.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Bot.Builder.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Bot.Connector.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Newtonsoft.Json.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.Net.Http.Formatting.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.Web.Http.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.Web.Http.WebHost.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Autofac.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Bot.Builder.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Bot.Connector.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Newtonsoft.Json.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.Net.Http.Formatting.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.Web.Http.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\System.Web.Http.WebHost.xml
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\obj\Debug\ConFoosedBot.Ranking.csprojResolveAssemblyReference.cache
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\obj\Debug\Bot Application.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\obj\Debug\Bot Application.pdb
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Confoosed.MatchLogic.dll
+C:\Users\arnulfk\Source\Repos\ConFoosedBot\ConFoosedBot.Ranking\bin\Confoosed.MatchLogic.pdb

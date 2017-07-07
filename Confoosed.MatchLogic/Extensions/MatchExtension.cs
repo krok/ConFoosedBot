@@ -6,7 +6,7 @@ namespace Confoosed.MatchLogic.Extensions
 {
     public static class MatchExtension
     {
-        public static IEnumerable<Group> GetGroups(this IEnumerable<FoosMatch> matches)
+        public static IEnumerable<Group> GetGroups(this IEnumerable<Match> matches)
         {
             var groups = new List<Group>();
             foreach (var match in matches)
@@ -38,12 +38,12 @@ namespace Confoosed.MatchLogic.Extensions
             return groups;
         }
 
-        public static IOrderedEnumerable<Group> GetGroupsBySize(this IEnumerable<FoosMatch> matches)
+        public static IOrderedEnumerable<Group> GetGroupsBySize(this IEnumerable<Match> matches)
         {
             return matches.GetGroups().GetGroupsBySize();
         }
 
-        public static IEnumerable<Player> GetPlayers(this IEnumerable<FoosMatch> matches)
+        public static IEnumerable<Player> GetPlayers(this IEnumerable<Match> matches)
         {
             var list = matches.ToList();
             return

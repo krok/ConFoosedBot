@@ -1,29 +1,41 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Confoosed.MatchLogic.Model
 {
+    [Serializable]
     public class Player
     {
-        private readonly IList<FoosMatch> _matches;
+        private readonly IList<Match> _matches;
+
+        public Player()
+        {
+            _matches = new List<Match>();
+        }
 
         public Player(string id)
         {
             Id = id;
-            _matches = new List<FoosMatch>();
+            _matches = new List<Match>();
         }
 
-        public string Id { get; }
+        public string Id { get; set; }
 
         public int? Ranking { get; set; }
 
-        public IEnumerable<FoosMatch> GetMatches()
+        public IEnumerable<Match> GetMatches()
         {
             return _matches;
         }
 
-        public void AddMatch(FoosMatch match)
+        public void AddMatch(Match match)
         {
             _matches.Add(match);
+        }
+
+        public override string ToString()
+        {
+            return Id;
         }
     }
 }
